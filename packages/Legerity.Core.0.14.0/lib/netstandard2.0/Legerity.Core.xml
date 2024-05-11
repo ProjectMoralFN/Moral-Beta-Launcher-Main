@@ -1,0 +1,2031 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Legerity.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Legerity.Android.AndroidAppManagerOptions">
+            <summary>
+            Defines a specific <see cref="T:Legerity.AppiumManagerOptions"/> for an Android application.
+            </summary>
+        </member>
+        <member name="M:Legerity.Android.AndroidAppManagerOptions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Android.AndroidAppManagerOptions"/> class.
+            </summary>
+        </member>
+        <member name="M:Legerity.Android.AndroidAppManagerOptions.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Android.AndroidAppManagerOptions"/> class.
+            </summary>
+            <param name="appPath">
+            The path of the application under test, e.g. c:/users/legerity/source/myapp/com.instagram.android.apk.
+            </param>
+        </member>
+        <member name="M:Legerity.Android.AndroidAppManagerOptions.#ctor(System.String,System.ValueTuple{System.String,System.Object}[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Android.AndroidAppManagerOptions"/> class.
+            </summary>
+            <param name="appPath">
+            The path of the application under test, e.g. c:/users/legerity/source/myapp/com.instagram.android.apk.
+            </param>
+            <param name="additionalOptions">
+            The additional options to apply to the <see cref="T:OpenQA.Selenium.Appium.AppiumOptions"/>.
+            </param>
+        </member>
+        <member name="M:Legerity.Android.AndroidAppManagerOptions.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Android.AndroidAppManagerOptions"/> class.
+            </summary>
+            <param name="appId">
+            The ID of the application under test, e.g. com.instagram.android.
+            </param>
+            <param name="appActivity">
+            The activity of the application to start, e.g. com.instagram.android.activity.MainTabActivity.
+            </param>
+        </member>
+        <member name="M:Legerity.Android.AndroidAppManagerOptions.#ctor(System.String,System.String,System.ValueTuple{System.String,System.Object}[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Android.AndroidAppManagerOptions"/> class.
+            </summary>
+            <param name="appId">
+            The ID of the application under test, e.g. com.instagram.android.
+            </param>
+            <param name="appActivity">
+            The activity of the application to start, e.g. com.instagram.android.activity.MainTabActivity.
+            </param>
+            <param name="additionalOptions">
+            The additional options to apply to the <see cref="T:OpenQA.Selenium.Appium.AppiumOptions"/>.
+            </param>
+        </member>
+        <member name="M:Legerity.Android.AndroidAppManagerOptions.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.ValueTuple{System.String,System.Object}[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Android.AndroidAppManagerOptions"/> class.
+            </summary>
+            <param name="appId">
+            The ID of the application under test, e.g. com.instagram.android.
+            </param>
+            <param name="appActivity">
+            The activity of the application to start, e.g. com.instagram.android.activity.MainTabActivity.
+            </param>
+            <param name="appPath">
+            The path of the application under test, e.g. c:/users/legerity/source/myapp/com.instagram.android.apk.
+            </param>
+            <param name="osVersion">
+            The version of Android to run the application on.
+            </param>
+            <param name="deviceName">
+            The name of the Android device to run the application on.
+            </param>
+            <param name="deviceId">
+            The ID of the Android device to run the application on.
+            </param>
+            <param name="additionalOptions">
+            The additional options to apply to the <see cref="T:OpenQA.Selenium.Appium.AppiumOptions"/>.
+            </param>
+        </member>
+        <member name="P:Legerity.Android.AndroidAppManagerOptions.AppId">
+            <summary>
+            Gets or sets the ID of the application under test.
+            </summary>
+        </member>
+        <member name="P:Legerity.Android.AndroidAppManagerOptions.AppActivity">
+            <summary>
+            Gets or sets the activity of the application to start, e.g. com.instagram.android.activity.MainTabActivity.
+            </summary>
+        </member>
+        <member name="P:Legerity.Android.AndroidAppManagerOptions.AppPath">
+            <summary>
+            Gets or sets the path of the application under test, e.g. c:/users/legerity/source/myapp/com.instagram.android.apk.
+            </summary>
+        </member>
+        <member name="P:Legerity.Android.AndroidAppManagerOptions.OSVersion">
+            <summary>
+            Gets or sets the version of Android to run the application on.
+            </summary>
+        </member>
+        <member name="P:Legerity.Android.AndroidAppManagerOptions.DeviceName">
+            <summary>
+            Gets or sets the name of the Android device to run the application on.
+            </summary>
+        </member>
+        <member name="P:Legerity.Android.AndroidAppManagerOptions.DeviceId">
+            <summary>
+            Gets or sets the ID of the Android device to run the application on.
+            </summary>
+        </member>
+        <member name="P:Legerity.Android.AndroidAppManagerOptions.LaunchAppiumServer">
+            <summary>
+            Gets or sets a value indicating whether to launch the Appium server instance.
+            </summary>
+        </member>
+        <member name="M:Legerity.Android.AndroidAppManagerOptions.Configure">
+            <summary>
+            Configures the <see cref="P:Legerity.AppiumManagerOptions.AppiumOptions"/> with the specified additional options.
+            </summary>
+        </member>
+        <member name="M:Legerity.Android.AndroidAppManagerOptions.Configure(System.ValueTuple{System.String,System.Object}[])">
+            <summary>
+            Configures the <see cref="T:OpenQA.Selenium.Appium.AppiumOptions"/> with the specified additional options.
+            </summary>
+            <param name="additionalOptions">
+            The additional options to apply to the <see cref="T:OpenQA.Selenium.Appium.AppiumOptions"/>.
+            </param>
+        </member>
+        <member name="M:Legerity.Android.AndroidAppManagerOptions.ToString">
+            <summary>Returns a string that represents the current object.</summary>
+            <returns>A string that represents the current object.</returns>
+        </member>
+        <member name="T:Legerity.AppiumManagerOptions">
+            <summary>
+            Defines a base model that represents Appium specific configuration options for the <see cref="T:Legerity.AppManager"/>.
+            </summary>
+        </member>
+        <member name="P:Legerity.AppiumManagerOptions.AdditionalOptions">
+            <summary>
+            Gets or sets the additional options to apply to the <see cref="P:Legerity.AppiumManagerOptions.AppiumOptions"/>.
+            </summary>
+        </member>
+        <member name="P:Legerity.AppiumManagerOptions.AppiumOptions">
+            <summary>
+            Gets or sets the options to configure the Appium driver.
+            <para>
+            This property is null until the <see cref="M:Legerity.AppiumManagerOptions.Configure"/> method is called.
+            <see cref="M:Legerity.AppiumManagerOptions.Configure"/> is called automatically when calling the <see cref="M:Legerity.AppManager.StartApp(Legerity.AppManagerOptions,System.Func{OpenQA.Selenium.IWebDriver,System.Boolean},System.Nullable{System.TimeSpan},System.Int32)"/> method.
+            </para>
+            </summary>
+        </member>
+        <member name="M:Legerity.AppiumManagerOptions.Configure">
+            <summary>
+            Configures the <see cref="P:Legerity.AppiumManagerOptions.AppiumOptions"/> with the specified additional options.
+            </summary>
+        </member>
+        <member name="T:Legerity.AppManager">
+            <summary>
+            Defines a manager for the application under test.
+            </summary>
+        </member>
+        <member name="P:Legerity.AppManager.WindowsApp">
+            <summary>
+            Gets the instance of the started Windows application.
+            </summary>
+            <remarks>
+            This instance should not be used in parallelized test runs. Instead, use the instance returned by the <see cref="M:Legerity.AppManager.StartApp(Legerity.AppManagerOptions,System.Func{OpenQA.Selenium.IWebDriver,System.Boolean},System.Nullable{System.TimeSpan},System.Int32)"/> method.
+            </remarks>
+        </member>
+        <member name="P:Legerity.AppManager.AndroidApp">
+            <summary>
+            Gets the instance of the started Android application.
+            </summary>
+            <remarks>
+            This instance should not be used in parallelized test runs. Instead, use the instance returned by the <see cref="M:Legerity.AppManager.StartApp(Legerity.AppManagerOptions,System.Func{OpenQA.Selenium.IWebDriver,System.Boolean},System.Nullable{System.TimeSpan},System.Int32)"/> method.
+            </remarks>
+        </member>
+        <member name="P:Legerity.AppManager.IOSApp">
+            <summary>
+            Gets the instance of the started iOS application.
+            </summary>
+            <remarks>
+            This instance should not be used in parallelized test runs. Instead, use the instance returned by the <see cref="M:Legerity.AppManager.StartApp(Legerity.AppManagerOptions,System.Func{OpenQA.Selenium.IWebDriver,System.Boolean},System.Nullable{System.TimeSpan},System.Int32)"/> method.
+            </remarks>
+        </member>
+        <member name="P:Legerity.AppManager.WebApp">
+            <summary>
+            Gets the instance of the started web application.
+            </summary>
+            <remarks>
+            This instance should not be used in parallelized test runs. Instead, use the instance returned by the <see cref="M:Legerity.AppManager.StartApp(Legerity.AppManagerOptions,System.Func{OpenQA.Selenium.IWebDriver,System.Boolean},System.Nullable{System.TimeSpan},System.Int32)"/> method.
+            </remarks>
+        </member>
+        <member name="P:Legerity.AppManager.App">
+            <summary>
+            Gets or sets the instance of the started application.
+            <para>
+            This could be a <see cref="T:OpenQA.Selenium.Appium.Windows.WindowsDriver`1"/>, <see cref="T:OpenQA.Selenium.Appium.Android.AndroidDriver`1"/>, <see cref="T:OpenQA.Selenium.Appium.iOS.IOSDriver`1"/>, or web driver.
+            </para>
+            </summary>
+            <remarks>
+            This instance should not be used in parallelized test runs. Instead, use the instance returned by the <see cref="M:Legerity.AppManager.StartApp(Legerity.AppManagerOptions,System.Func{OpenQA.Selenium.IWebDriver,System.Boolean},System.Nullable{System.TimeSpan},System.Int32)"/> method.
+            </remarks>
+        </member>
+        <member name="P:Legerity.AppManager.Apps">
+            <summary>
+            Gets the instances of started applications.
+            </summary>
+        </member>
+        <member name="M:Legerity.AppManager.StartApp(Legerity.AppManagerOptions,System.Func{OpenQA.Selenium.IWebDriver,System.Boolean},System.Nullable{System.TimeSpan},System.Int32)">
+            <summary>
+            Starts the application ready for testing.
+            </summary>
+            <param name="opts">
+            The options to configure the driver with.
+            </param>
+            <param name="waitUntil">
+            An optional condition of the driver to wait on until it is met.
+            </param>
+            <param name="waitUntilTimeout">
+            An optional timeout wait on the conditional wait until being true. If not set, the wait will run immediately, and if not valid, will throw an exception.
+            </param>
+            <param name="waitUntilRetries">
+            An optional count of retries after a timeout on the wait until condition before accepting the failure.
+            </param>
+            <exception cref="T:Legerity.Exceptions.DriverLoadFailedException">
+            Thrown when the application is null, the session ID is null once initialized, or the driver fails to configure correctly before returning.
+            </exception>
+            <exception cref="T:OpenQA.Selenium.WebDriverException">Thrown when the wait until condition is not met in the allocated timeout period if provided.</exception>
+            <returns>The configured and running application driver.</returns>
+            <exception cref="T:Legerity.LegerityException">
+            Thrown when:
+            - The Appium server could not be found when running with <see cref="P:Legerity.Android.AndroidAppManagerOptions.LaunchAppiumServer"/> or <see cref="P:Legerity.IOS.IOSAppManagerOptions.LaunchAppiumServer"/> true.
+            - The WinAppDriver could not be found when running with <see cref="P:Legerity.Windows.WindowsAppManagerOptions.LaunchWinAppDriver"/> true.
+            - The WinAppDriver failed to load when running with <see cref="P:Legerity.Windows.WindowsAppManagerOptions.LaunchWinAppDriver"/> true.
+            </exception>
+        </member>
+        <member name="M:Legerity.AppManager.StopApp(System.Boolean)">
+            <summary>
+            Stops the <see cref="P:Legerity.AppManager.App"/>, with an option to stop the running Appium or WinAppDriver server.
+            </summary>
+            <param name="stopServer">
+            An optional value indicating whether to stop the running Appium or WinAppDriver server. Default, <b>true</b>.
+            </param>
+        </member>
+        <member name="M:Legerity.AppManager.StopApp(OpenQA.Selenium.Remote.RemoteWebDriver,System.Boolean)">
+            <summary>
+            Stops an application driver, with an option to stop the running Appium or WinAppDriver server.
+            </summary>
+            <param name="app">
+            The <see cref="T:OpenQA.Selenium.IWebDriver"/> instance to stop running.
+            </param>
+            <param name="stopServer">
+            An optional value indicating whether to stop the running Appium or WinAppDriver server. Default, <b>false</b>.
+            </param>
+        </member>
+        <member name="M:Legerity.AppManager.StopApps">
+            <summary>
+            Stops all running application drivers.
+            </summary>
+        </member>
+        <member name="M:Legerity.AppManager.VerifyAppDriver(OpenQA.Selenium.Remote.RemoteWebDriver,Legerity.AppManagerOptions)">
+            <exception cref="T:Legerity.Exceptions.DriverLoadFailedException">Thrown when the driver could not be verified.</exception>
+        </member>
+        <member name="T:Legerity.AppManagerOptions">
+            <summary>
+            Defines a base model that represents configuration options for the <see cref="T:Legerity.AppManager"/>.
+            </summary>
+        </member>
+        <member name="P:Legerity.AppManagerOptions.DriverUri">
+            <summary>
+            Gets or sets the URI to the application driver.
+            <para>
+            For native apps, this would be the application driver URL. For web apps, this would be the path to where the driver tool exists.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Legerity.AppManagerOptions.ImplicitWait">
+            <summary>
+            Gets or sets the implicit wait timeout, which is the amount of time the driver should wait when searching for an element if it is not immediately present.
+            <para>
+            By default, the wait time will be 2 seconds.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Legerity.AppManagerOptions.DriverOptions">
+            <summary>
+            Gets or sets the additional options to configure the driver.
+            </summary>
+        </member>
+        <member name="M:Legerity.AppManagerOptions.ToString">
+            <summary>Returns a string that represents the current object.</summary>
+            <returns>A string that represents the current object.</returns>
+        </member>
+        <member name="T:Legerity.ByAll">
+            <summary>
+            Defines a <see cref="T:OpenQA.Selenium.By"/> locator that can be used to find all elements that match all locators in sequence.
+            </summary>
+            <remarks>
+            The order of the locators is run in sequence which means that results of <see cref="M:Legerity.ByAll.FindElements(OpenQA.Selenium.ISearchContext)"/> may not be in order of their location on screen.
+            </remarks>
+            <example>
+            The following example shows how to find all elements that match the class name and then the text. All locators must match for the element to be returned.
+            <code>
+            driver.FindElement(new ByAll(By.ClassName("my-class"), By.Text("My Text")));
+            </code>
+            </example>
+        </member>
+        <member name="M:Legerity.ByAll.#ctor(OpenQA.Selenium.By[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.ByAll"/> class.
+            </summary>
+            <param name="locators">The locators to find all references of.</param>
+        </member>
+        <member name="M:Legerity.ByAll.FindElement(OpenQA.Selenium.ISearchContext)">
+            <summary>Finds the first element matching the criteria.</summary>
+            <param name="context">An <see cref="T:OpenQA.Selenium.ISearchContext" /> object to use to search for the elements.</param>
+            <returns>The first matching <see cref="T:OpenQA.Selenium.IWebElement" /> on the current context.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.ByAll.FindElements(OpenQA.Selenium.ISearchContext)">
+            <summary>Finds all elements matching the criteria.</summary>
+            <param name="context">An <see cref="T:OpenQA.Selenium.ISearchContext" /> object to use to search for the elements.</param>
+            <returns>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of all <see cref="T:OpenQA.Selenium.IWebElement">WebElements</see>
+            matching the current criteria, or an empty list if nothing matches.</returns>
+        </member>
+        <member name="T:Legerity.ByExtras">
+            <summary>
+            Defines a collection of extra locator constraints for <see cref="T:OpenQA.Selenium.By"/>.
+            </summary>
+        </member>
+        <member name="M:Legerity.ByExtras.Text(System.String)">
+            <summary>
+            Gets a mechanism to find elements by the text content.
+            </summary>
+            <param name="text">The text to find.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.By"/> object the driver can use to find elements.</returns>
+        </member>
+        <member name="M:Legerity.ByExtras.PartialText(System.String)">
+            <summary>
+            Gets a mechanism to find elements by partial text content.
+            </summary>
+            <param name="text">The text to find.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.By"/> object the driver can use to find elements.</returns>
+        </member>
+        <member name="T:Legerity.ByNested">
+            <summary>
+            Defines a <see cref="T:OpenQA.Selenium.By"/> locator that can be used to find elements using a sequence of locators that are continuously nested until the final locator is run.
+            </summary>
+            <example>
+            The following example shows how to find all elements that match inputs that appear under divs, followed by forms.
+            <code>
+            driver.FindElements(new ByNested(By.TagName("div"), By.TagName("form"), By.TagName("input")));
+            </code>
+            </example>
+        </member>
+        <member name="M:Legerity.ByNested.#ctor(OpenQA.Selenium.By[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.ByNested"/> class.
+            </summary>
+            <param name="locators">The locators in nesting sequence to find references of.</param>
+        </member>
+        <member name="M:Legerity.ByNested.FindElement(OpenQA.Selenium.ISearchContext)">
+            <summary>Finds the first element matching the criteria.</summary>
+            <param name="context">An <see cref="T:OpenQA.Selenium.ISearchContext" /> object to use to search for the elements.</param>
+            <returns>The first matching <see cref="T:OpenQA.Selenium.IWebElement" /> on the current context.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.ByNested.FindElements(OpenQA.Selenium.ISearchContext)">
+            <summary>Finds all elements matching the criteria.</summary>
+            <param name="context">An <see cref="T:OpenQA.Selenium.ISearchContext" /> object to use to search for the elements.</param>
+            <returns>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of all <see cref="T:OpenQA.Selenium.IWebElement">WebElements</see>
+            matching the current criteria, or an empty list if nothing matches.</returns>
+        </member>
+        <member name="T:Legerity.ElementWrapper`1">
+            <summary>
+            Defines a base wrapper for elements to expose platform element logic.
+            </summary>
+            <typeparam name="TElement">
+            The type of <see cref="T:OpenQA.Selenium.Appium.AppiumWebElement"/>.
+            </typeparam>
+        </member>
+        <member name="M:Legerity.ElementWrapper`1.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.ElementWrapper`1"/> class.
+            </summary>
+            <param name="element">
+            The <typeparamref name="TElement"/> reference.
+            </param>
+        </member>
+        <member name="P:Legerity.ElementWrapper`1.Element">
+            <summary>Gets the original <typeparamref name="TElement"/> reference object.</summary>
+        </member>
+        <member name="P:Legerity.ElementWrapper`1.ElementDriver">
+            <summary>
+            Gets the driver used to find this element.
+            </summary>
+        </member>
+        <member name="P:Legerity.ElementWrapper`1.IsVisible">
+            <summary>
+            Gets a value indicating whether the element is visible.
+            </summary>
+            <exception cref="T:OpenQA.Selenium.StaleElementReferenceException">Thrown when an element is no longer valid in the document DOM.</exception>
+        </member>
+        <member name="P:Legerity.ElementWrapper`1.IsEnabled">
+            <summary>
+            Gets a value indicating whether the element is enabled.
+            </summary>
+            <exception cref="T:OpenQA.Selenium.StaleElementReferenceException">Thrown when an element is no longer valid in the document DOM.</exception>
+        </member>
+        <member name="M:Legerity.ElementWrapper`1.Click">
+            <summary>
+            Clicks the element.
+            </summary>
+            <exception cref="T:OpenQA.Selenium.InvalidElementStateException">Thrown when an element is not enabled.</exception>
+            <exception cref="T:OpenQA.Selenium.ElementNotVisibleException">Thrown when an element is not visible.</exception>
+            <exception cref="T:OpenQA.Selenium.StaleElementReferenceException">Thrown when an element is no longer valid in the document DOM.</exception>
+        </member>
+        <member name="M:Legerity.ElementWrapper`1.GetAttribute(System.String)">
+            <summary>
+            Gets the value of the specified attribute for this element.
+            </summary>
+            <param name="attributeName">The name of the attribute.</param>
+            <returns>The attribute's current value if it exists; otherwise, null.</returns>
+            <exception cref="T:OpenQA.Selenium.StaleElementReferenceException">Thrown when an element is no longer valid in the document DOM.</exception>
+        </member>
+        <member name="M:Legerity.ElementWrapper`1.FindElement(OpenQA.Selenium.By)">
+            <summary>
+            Finds a child element by the specified locator.
+            </summary>
+            <param name="locator">The locator to find a child element by.</param>
+            <returns>The <typeparamref name="TElement"/>.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.ElementWrapper`1.VerifyElementNotShown(OpenQA.Selenium.By)">
+            <summary>
+            Determines whether the given element is not shown.
+            </summary>
+            <param name="locator">
+            The locator for the element to locate.
+            </param>
+            <exception cref="T:Legerity.Exceptions.ElementShownException">Thrown when the element is shown for the expected locator.</exception>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.ElementWrapper`1.VerifyElementShown(OpenQA.Selenium.By)">
+            <summary>
+            Determines whether the given element is shown.
+            </summary>
+            <param name="locator">
+            The locator for the element to find.
+            </param>
+            <exception cref="T:Legerity.Exceptions.ElementNotShownException">Thrown when an element is not shown for the expected locator.</exception>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.ElementWrapper`1.VerifyElementShown(OpenQA.Selenium.By,System.Nullable{System.TimeSpan})">
+            <summary>
+            Determines whether the specified element is shown with the specified timeout.
+            </summary>
+            <param name="locator">The locator to find a specific element.</param>
+            <param name="timeout">
+            The amount of time the driver should wait when searching for the <paramref name="locator"/> if it is not immediately present.
+            </param>
+            <exception cref="T:Legerity.Exceptions.ElementNotShownException">Thrown when an element is not shown for the expected locator.</exception>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.ElementWrapper`1.VerifyElementsShown(OpenQA.Selenium.By)">
+            <summary>
+            Determines whether the specified elements are shown.
+            </summary>
+            <param name="locator">
+            The locator for the element to find.
+            </param>
+            <exception cref="T:Legerity.Exceptions.ElementsNotShownException">Thrown when no elements are shown for the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.ElementWrapper`1.VerifyElementsShown(OpenQA.Selenium.By,System.Nullable{System.TimeSpan})">
+            <summary>
+            Determines whether the specified elements are shown with the specified timeout.
+            </summary>
+            <param name="locator">
+            The locator to find a collection of elements.
+            </param>
+            <param name="timeout">
+            The amount of time the driver should wait when searching for the <paramref name="locator"/> if it is not immediately present.
+            </param>
+            <exception cref="T:Legerity.Exceptions.ElementsNotShownException">Thrown when no elements are shown for the expected locator.</exception>
+        </member>
+        <member name="T:Legerity.Exceptions.AppiumServerLoadFailedException">
+            <summary>
+            Defines an exception for when the Appium sever could not be loaded.
+            </summary>
+        </member>
+        <member name="M:Legerity.Exceptions.AppiumServerLoadFailedException.#ctor(System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Exceptions.AppiumServerLoadFailedException"/> class.
+            </summary>
+            <param name="innerException">The inner exception thrown as a result of the Appium server load failure.</param>
+        </member>
+        <member name="T:Legerity.Exceptions.DriverLoadFailedException">
+            <summary>
+            Defines an exception thrown if the Appium driver fails to load the requested application.
+            </summary>
+        </member>
+        <member name="M:Legerity.Exceptions.DriverLoadFailedException.#ctor(Legerity.AppManagerOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Exceptions.DriverLoadFailedException"/> class.
+            </summary>
+            <param name="opts">
+            The app manager options used to initialize the driver.
+            </param>
+        </member>
+        <member name="M:Legerity.Exceptions.DriverLoadFailedException.#ctor(Legerity.AppManagerOptions,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Exceptions.DriverLoadFailedException"/> class.
+            </summary>
+            <param name="opts">
+            The app manager options used to initialize the driver.
+            </param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="P:Legerity.Exceptions.DriverLoadFailedException.AppManagerOptions">
+            <summary>
+            Gets the app manager options used to initialize the driver.
+            </summary>
+        </member>
+        <member name="T:Legerity.Exceptions.DriverNotInitializedException">
+            <summary>
+            Defines an exception thrown when an attempt is made to access a driver which has not been initialized.
+            </summary>
+        </member>
+        <member name="M:Legerity.Exceptions.DriverNotInitializedException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Exceptions.DriverNotInitializedException"/> class.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="T:Legerity.Exceptions.ElementNotShownException">
+            <summary>
+            Defines an exception for when an element is not shown.
+            </summary>
+        </member>
+        <member name="M:Legerity.Exceptions.ElementNotShownException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Exceptions.ElementNotShownException"/> class.
+            </summary>
+            <param name="locator">
+            The locator used to locate the element.
+            </param>
+        </member>
+        <member name="M:Legerity.Exceptions.ElementNotShownException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Exceptions.ElementNotShownException"/> class.
+            </summary>
+            <param name="locator">
+            The locator used to locate the element.
+            </param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="P:Legerity.Exceptions.ElementNotShownException.Locator">
+            <summary>
+            Gets the locator used to locate the element.
+            </summary>
+        </member>
+        <member name="P:Legerity.Exceptions.ElementNotShownException.ElementName">
+            <summary>
+            Gets the name of the element that was not shown.
+            </summary>
+        </member>
+        <member name="T:Legerity.Exceptions.ElementShownException">
+            <summary>
+            Defines an exception for when an element is shown when it shouldn't be.
+            </summary>
+        </member>
+        <member name="M:Legerity.Exceptions.ElementShownException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Exceptions.ElementShownException"/> class.
+            </summary>
+            <param name="locator">
+            The locator used to locate the element.
+            </param>
+        </member>
+        <member name="M:Legerity.Exceptions.ElementShownException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Exceptions.ElementShownException"/> class.
+            </summary>
+            <param name="locator">
+            The locator used to locate the element.
+            </param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="P:Legerity.Exceptions.ElementShownException.Locator">
+            <summary>
+            Gets the locator used to locate the element.
+            </summary>
+        </member>
+        <member name="P:Legerity.Exceptions.ElementShownException.ElementName">
+            <summary>
+            Gets the name of the element that was shown.
+            </summary>
+        </member>
+        <member name="T:Legerity.Exceptions.ElementsNotShownException">
+            <summary>
+            Defines an exception for when expected elements are not shown.
+            </summary>
+        </member>
+        <member name="M:Legerity.Exceptions.ElementsNotShownException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Exceptions.ElementsNotShownException"/> class.
+            </summary>
+            <param name="locator">
+            The locator used to locate the element.
+            </param>
+        </member>
+        <member name="M:Legerity.Exceptions.ElementsNotShownException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Exceptions.ElementsNotShownException"/> class.
+            </summary>
+            <param name="locator">
+            The locator used to locate the element.
+            </param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="P:Legerity.Exceptions.ElementsNotShownException.Locator">
+            <summary>
+            Gets the locator used to locate the elements.
+            </summary>
+        </member>
+        <member name="T:Legerity.Exceptions.PageNotShownException">
+            <summary>
+            Defines an exception for when a page is not shown.
+            </summary>
+        </member>
+        <member name="M:Legerity.Exceptions.PageNotShownException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Exceptions.PageNotShownException"/> class.
+            </summary>
+            <param name="pageName">
+            The name of the page that was not shown.
+            </param>
+        </member>
+        <member name="P:Legerity.Exceptions.PageNotShownException.PageName">
+            <summary>
+            Gets the name of the page that was not shown.
+            </summary>
+        </member>
+        <member name="T:Legerity.LegerityException">
+            <summary>
+            Defines a framework specific base exception.
+            </summary>
+        </member>
+        <member name="M:Legerity.LegerityException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.LegerityException"/> class.
+            </summary>
+        </member>
+        <member name="M:Legerity.LegerityException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.LegerityException"/> class with a specified error message.</summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Legerity.LegerityException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.LegerityException"/> class with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="T:Legerity.Extensions.AttributeExtensions">
+            <summary>
+            Defines a collection of extensions for retrieving element attributes.
+            </summary>
+        </member>
+        <member name="M:Legerity.Extensions.AttributeExtensions.GetName(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Retrieves the Name attribute from the specified element.
+            </summary>
+            <param name="element">The <see cref="T:OpenQA.Selenium.IWebElement"/> to retrieve a Name from.</param>
+            <returns>The Name of the element.</returns>
+            <exception cref="T:OpenQA.Selenium.StaleElementReferenceException">Thrown when an element is no longer valid in the document DOM.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.AttributeExtensions.GetName``1(Legerity.IElementWrapper{``0})">
+            <summary>
+            Retrieves the Name attribute from the specified element.
+            </summary>
+            <typeparam name="TElement">
+            The type of <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement"/>.
+            </typeparam>
+            <param name="element">The <see cref="T:Legerity.IElementWrapper`1"/> to retrieve a Name from.</param>
+            <returns>The Name of the element.</returns>
+            <exception cref="T:OpenQA.Selenium.StaleElementReferenceException">Thrown when an element is no longer valid in the document DOM.</exception>
+        </member>
+        <member name="T:Legerity.Extensions.DriverExtensions">
+            <summary>
+            Defines a collection of extensions for a driver.
+            </summary>
+        </member>
+        <member name="M:Legerity.Extensions.DriverExtensions.FindWebElement(OpenQA.Selenium.Remote.RemoteWebDriver,OpenQA.Selenium.By)">
+            <summary>
+            Finds the first element in the page that matches the <see cref="T:OpenQA.Selenium.By" /> locator.
+            </summary>
+            <param name="driver">The remote web driver.</param>
+            <param name="locator">The locator to find the element.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement"/>.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.DriverExtensions.FindWebElements(OpenQA.Selenium.Remote.RemoteWebDriver,OpenQA.Selenium.By)">
+            <summary>
+            Finds all the elements in the page that matches the <see cref="T:OpenQA.Selenium.By" /> locator.
+            </summary>
+            <param name="driver">The remote web driver.</param>
+            <param name="locator">The locator to find the elements.</param>
+            <returns>A readonly collection of <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement"/>.</returns>
+        </member>
+        <member name="M:Legerity.Extensions.DriverExtensions.FindElementByText(OpenQA.Selenium.Remote.RemoteWebDriver,System.String)">
+            <summary>
+            Finds the first element in the page that matches the specified text.
+            </summary>
+            <param name="driver">The remote web driver.</param>
+            <param name="text">The text to find.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.DriverExtensions.FindElementsByText(OpenQA.Selenium.Remote.RemoteWebDriver,System.String)">
+            <summary>
+            Finds all the elements in the page that matches the specified text.
+            </summary>
+            <param name="driver">The remote web driver.</param>
+            <param name="text">The text to find.</param>
+            <returns>A readonly collection of <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+        </member>
+        <member name="M:Legerity.Extensions.DriverExtensions.FindElementByPartialText(OpenQA.Selenium.Remote.RemoteWebDriver,System.String)">
+            <summary>
+            Finds the first element in the page that matches the specified text partially.
+            </summary>
+            <param name="driver">The remote web driver.</param>
+            <param name="text">The partial text to find.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.DriverExtensions.FindElementsByPartialText(OpenQA.Selenium.Remote.RemoteWebDriver,System.String)">
+            <summary>
+            Finds all the elements in the page that matches the specified text partially.
+            </summary>
+            <param name="driver">The remote web driver.</param>
+            <param name="text">The partial text to find.</param>
+            <returns>A readonly collection of <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+        </member>
+        <member name="M:Legerity.Extensions.DriverExtensions.GetAllElements(OpenQA.Selenium.Remote.RemoteWebDriver)">
+            <summary>
+            Retrieves all elements that can be located by the driver in the page.
+            </summary>
+            <param name="driver">The remote web driver.</param>
+            <returns>A readonly collection of <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+        </member>
+        <member name="M:Legerity.Extensions.DriverExtensions.GetAllChildElements(OpenQA.Selenium.Remote.RemoteWebDriver)">
+            <summary>
+            Retrieves all child elements that can be located by the driver in the page.
+            </summary>
+            <param name="driver">The remote web driver.</param>
+            <returns>A readonly collection of <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+        </member>
+        <member name="M:Legerity.Extensions.DriverExtensions.TryWaitUntil(OpenQA.Selenium.IWebDriver,System.Func{OpenQA.Selenium.IWebDriver,System.Boolean},System.Nullable{System.TimeSpan},System.Int32,System.Action{System.Exception})">
+            <summary>
+            Attempts to wait until a specified driver condition is met, with an optional timeout.
+            </summary>
+            <param name="appDriver">The driver to wait on.</param>
+            <param name="condition">The condition of the element to wait on.</param>
+            <param name="timeout">The optional timeout wait on the condition being true.</param>
+            <param name="retries">An optional count of retries after a timeout before accepting the failure.</param>
+            <param name="exceptionHandler">The optional exception handler thrown if an error occurs as a result of timeout.</param>
+            <returns>Whether the wait was a success.</returns>
+            <exception cref="T:System.Exception">Thrown when the <paramref name="exceptionHandler"/> callback throws an exception.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.DriverExtensions.WaitUntil``1(OpenQA.Selenium.IWebDriver,System.Func{OpenQA.Selenium.IWebDriver,``0},System.Nullable{System.TimeSpan},System.Int32)">
+            <summary>
+            Waits until a specified driver condition is met, with an optional timeout.
+            </summary>
+            <param name="appDriver">The driver to wait on.</param>
+            <param name="condition">The condition of the element to wait on.</param>
+            <param name="timeout">The optional timeout wait on the condition being true.</param>
+            <param name="retries">An optional count of retries after a timeout before accepting the failure.</param>
+            <typeparam name="TResult">The type of expected result from the wait condition.</typeparam>
+            <returns>The <typeparamref name="TResult"/> of the wait until operation.</returns>
+            <exception cref="T:OpenQA.Selenium.WebDriverException">Thrown when the condition is not met in the allocated timeout period.</exception>
+        </member>
+        <member name="T:Legerity.Extensions.ElementExtensions">
+            <summary>
+            Defines a collection of extensions for elements.
+            </summary>
+        </member>
+        <member name="M:Legerity.Extensions.ElementExtensions.GetBoundingRect(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Determines the bounding rectangle for the specified element.
+            </summary>
+            <param name="element">The element to determine the rect for.</param>
+            <returns>The elements bounding rectangle.</returns>
+            <exception cref="T:OpenQA.Selenium.StaleElementReferenceException">Thrown when an element is no longer valid in the document DOM.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.ElementExtensions.FindWebElement(OpenQA.Selenium.IWebElement,OpenQA.Selenium.By)">
+            <summary>
+            Finds the first element in the given element that matches the <see cref="T:OpenQA.Selenium.By" /> locator.
+            </summary>
+            <param name="element">The remote web element.</param>
+            <param name="locator">The locator to find the element.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement"/>.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.ElementExtensions.FindWebElements(OpenQA.Selenium.IWebElement,OpenQA.Selenium.By)">
+            <summary>
+            Finds all the elements in the given element that matches the <see cref="T:OpenQA.Selenium.By" /> locator.
+            </summary>
+            <param name="element">The remote web element.</param>
+            <param name="locator">The locator to find the elements.</param>
+            <returns>A readonly collection of <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement"/>.</returns>
+        </member>
+        <member name="M:Legerity.Extensions.ElementExtensions.FindElementByText(OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            Finds the first element in the given element that matches the specified text.
+            </summary>
+            <param name="element">The remote web element.</param>
+            <param name="text">The text to find.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.ElementExtensions.FindElementsByText(OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            Finds all the elements in the given element that matches the specified text.
+            </summary>
+            <param name="element">The remote web element.</param>
+            <param name="text">The text to find.</param>
+            <returns>A readonly collection of <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+        </member>
+        <member name="M:Legerity.Extensions.ElementExtensions.FindElementByPartialText(OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            Finds the first element in the given element that matches the specified text partially.
+            </summary>
+            <param name="element">The remote web element.</param>
+            <param name="text">The partial text to find.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.ElementExtensions.FindElementsByPartialText(OpenQA.Selenium.IWebElement,System.String)">
+            <summary>
+            Finds all the elements in the given element that matches the specified text partially.
+            </summary>
+            <param name="element">The remote web element.</param>
+            <param name="text">The partial text to find.</param>
+            <returns>A readonly collection of <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+        </member>
+        <member name="M:Legerity.Extensions.ElementExtensions.GetAllChildElements(OpenQA.Selenium.IWebElement)">
+            <summary>
+            Retrieves all child elements that can be located by the driver for the given element.
+            </summary>
+            <param name="element">The remote web driver.</param>
+            <returns>A readonly collection of <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+        </member>
+        <member name="M:Legerity.Extensions.ElementExtensions.TryWaitUntil(OpenQA.Selenium.Remote.RemoteWebElement,System.Func{OpenQA.Selenium.Remote.RemoteWebElement,System.Boolean},System.Nullable{System.TimeSpan},System.Int32,System.Action{System.Exception})">
+            <summary>
+            Attempts to wait until a specified element condition is met, with an optional timeout.
+            </summary>
+            <param name="element">The element to wait on.</param>
+            <param name="condition">The condition of the element to wait on.</param>
+            <param name="timeout">The optional timeout wait on the condition being true.</param>
+            <param name="retries">An optional count of retries after a timeout before accepting the failure.</param>
+            <param name="exceptionHandler">The optional exception handler thrown if an error occurs as a result of timeout.</param>
+            <returns>Whether the wait was a success.</returns>
+            <exception cref="T:System.Exception">Thrown when the <paramref name="exceptionHandler"/> callback throws an exception.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.ElementExtensions.WaitUntil``1(OpenQA.Selenium.Remote.RemoteWebElement,System.Func{OpenQA.Selenium.Remote.RemoteWebElement,``0},System.Nullable{System.TimeSpan},System.Int32)">
+            <summary>
+            Waits until a specified element condition is met, with an optional timeout.
+            </summary>
+            <param name="element">The element to wait on.</param>
+            <param name="condition">The condition of the element to wait on.</param>
+            <param name="timeout">The optional timeout wait on the condition being true.</param>
+            <param name="retries">An optional count of retries after a timeout before accepting the failure.</param>
+            <typeparam name="TResult">The type of expected result from the wait condition.</typeparam>
+            <returns>The <typeparamref name="TResult"/> of the wait until operation.</returns>
+            <exception cref="T:OpenQA.Selenium.WebDriverException">Thrown when the condition is not met in the allocated timeout period.</exception>
+            <exception cref="T:System.Exception">Thrown when the <paramref name="condition"/> callback throws an exception.</exception>
+        </member>
+        <member name="T:Legerity.Extensions.ElementWrapperExtensions">
+            <summary>
+            Defines a collection of extensions for <see cref="T:Legerity.IElementWrapper`1"/> objects.
+            </summary>
+        </member>
+        <member name="M:Legerity.Extensions.ElementWrapperExtensions.GetBoundingRect``1(Legerity.IElementWrapper{``0})">
+            <summary>
+            Determines the bounding rectangle for the specified element.
+            </summary>
+            <typeparam name="TElement">
+            The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.
+            </typeparam>
+            <param name="element">The element to determine the rect for.</param>
+            <returns>The elements bounding rectangle.</returns>
+            <exception cref="T:OpenQA.Selenium.StaleElementReferenceException">Thrown when an element is no longer valid in the document DOM.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.ElementWrapperExtensions.FindWebElement``1(Legerity.IElementWrapper{``0},OpenQA.Selenium.By)">
+            <summary>
+            Finds the first element in the given element that matches the <see cref="T:OpenQA.Selenium.By" /> locator.
+            </summary>
+            <typeparam name="TElement">
+            The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.
+            </typeparam>
+            <param name="element">The remote web element.</param>
+            <param name="locator">The locator to find the element.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement"/>.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.ElementWrapperExtensions.FindWebElements``1(Legerity.IElementWrapper{``0},OpenQA.Selenium.By)">
+            <summary>
+            Finds all the elements in the given element that matches the <see cref="T:OpenQA.Selenium.By" /> locator.
+            </summary>
+            <typeparam name="TElement">
+            The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.
+            </typeparam>
+            <param name="element">The remote web element.</param>
+            <param name="locator">The locator to find the elements.</param>
+            <returns>A readonly collection of <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement"/>.</returns>
+        </member>
+        <member name="M:Legerity.Extensions.ElementWrapperExtensions.FindElementByText``1(Legerity.IElementWrapper{``0},System.String)">
+            <summary>
+            Finds the first element in the given element that matches the specified text.
+            </summary>
+            <typeparam name="TElement">
+            The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.
+            </typeparam>
+            <param name="element">The remote web element.</param>
+            <param name="text">The text to find.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.ElementWrapperExtensions.FindElementsByText``1(Legerity.IElementWrapper{``0},System.String)">
+            <summary>
+            Finds all the elements in the given element that matches the specified text.
+            </summary>
+            <typeparam name="TElement">
+            The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.
+            </typeparam>
+            <param name="element">The remote web element.</param>
+            <param name="text">The text to find.</param>
+            <returns>A readonly collection of <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+        </member>
+        <member name="M:Legerity.Extensions.ElementWrapperExtensions.FindElementByPartialText``1(Legerity.IElementWrapper{``0},System.String)">
+            <summary>
+            Finds the first element in the given element that matches the specified text partially.
+            </summary>
+            <typeparam name="TElement">
+            The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.
+            </typeparam>
+            <param name="element">The remote web element.</param>
+            <param name="text">The partial text to find.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.ElementWrapperExtensions.FindElementsByPartialText``1(Legerity.IElementWrapper{``0},System.String)">
+            <summary>
+            Finds all the elements in the given element that matches the specified text partially.
+            </summary>
+            <typeparam name="TElement">
+            The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.
+            </typeparam>
+            <param name="element">The remote web element.</param>
+            <param name="text">The partial text to find.</param>
+            <returns>A readonly collection of <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+        </member>
+        <member name="M:Legerity.Extensions.ElementWrapperExtensions.GetAllChildElements``1(Legerity.IElementWrapper{``0})">
+            <summary>
+            Retrieves all child elements that can be located by the driver for the given element.
+            </summary>
+            <typeparam name="TElement">
+            The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.
+            </typeparam>
+            <param name="element">The remote web driver.</param>
+            <returns>A readonly collection of <see cref="T:OpenQA.Selenium.IWebElement"/>.</returns>
+        </member>
+        <member name="M:Legerity.Extensions.ElementWrapperExtensions.TryWaitUntil``2(Legerity.IElementWrapper{``0},System.Func{Legerity.IElementWrapper{``0},``1},System.Nullable{System.TimeSpan},System.Int32,System.Action{System.Exception})">
+            <summary>
+            Attempts to wait until a specified element condition is met, with an optional timeout.
+            </summary>
+            <param name="element">The element to wait on.</param>
+            <param name="condition">The condition of the element to wait on.</param>
+            <param name="timeout">The optional timeout wait on the condition being true.</param>
+            <param name="retries">An optional count of retries after a timeout before accepting the failure.</param>
+            <param name="exceptionHandler">The optional exception handler thrown if an error occurs as a result of timeout.</param>
+            <typeparam name="TElement">The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.</typeparam>
+            <typeparam name="TResult">The type of expected result from the wait condition.</typeparam>
+            <returns>Whether the wait was a success.</returns>
+            <exception cref="T:System.Exception">Thrown when the <paramref name="exceptionHandler"/> callback throws an exception.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.ElementWrapperExtensions.WaitUntil``2(Legerity.IElementWrapper{``0},System.Func{Legerity.IElementWrapper{``0},``1},System.Nullable{System.TimeSpan},System.Int32)">
+            <summary>
+            Waits until a specified element condition is met, with an optional timeout.
+            </summary>
+            <param name="element">The element to wait on.</param>
+            <param name="condition">The condition of the element to wait on.</param>
+            <param name="timeout">The optional timeout wait on the condition being true.</param>
+            <param name="retries">An optional count of retries after a timeout before accepting the failure.</param>
+            <typeparam name="TElement">The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.</typeparam>
+            <typeparam name="TResult">The type of expected result from the wait condition.</typeparam>
+            <returns>The <typeparamref name="TResult"/> of the wait until operation.</returns>
+            <exception cref="T:OpenQA.Selenium.WebDriverException">Thrown when the condition is not met in the allocated timeout period.</exception>
+            <exception cref="T:System.Exception">Thrown when the <paramref name="condition"/> callback throws an exception.</exception>
+        </member>
+        <member name="T:Legerity.Extensions.InteractionExtensions">
+            <summary>
+            Defines a collection of extensions for performing interactions with elements.
+            </summary>
+        </member>
+        <member name="M:Legerity.Extensions.InteractionExtensions.ClickAndHold(OpenQA.Selenium.Remote.RemoteWebElement)">
+            <summary>
+            Clicks and holds on the element.
+            </summary>
+            <remarks>
+            The element hold can be released by calling <see cref="M:Legerity.Extensions.InteractionExtensions.ReleaseHold(OpenQA.Selenium.Remote.RemoteWebElement)"/>.
+            </remarks>
+            <param name="element">The element to click and hold.</param>
+        </member>
+        <member name="M:Legerity.Extensions.InteractionExtensions.ClickAndHold``1(Legerity.IElementWrapper{``0})">
+            <summary>
+            Clicks and holds on the element.
+            </summary>
+            <remarks>
+            The element hold can be released by calling <see cref="M:Legerity.Extensions.InteractionExtensions.ReleaseHold(OpenQA.Selenium.Remote.RemoteWebElement)"/>.
+            </remarks>
+            <typeparam name="TElement">
+            The type of wrapped <see cref="T:OpenQA.Selenium.IWebElement"/>.
+            </typeparam>
+            <param name="element">The element to click and hold.</param>
+        </member>
+        <member name="M:Legerity.Extensions.InteractionExtensions.ReleaseHold(OpenQA.Selenium.Remote.RemoteWebElement)">
+            <summary>
+            Releases the hold click from the element.
+            </summary>
+            <param name="element">The element to release the hold from.</param>
+        </member>
+        <member name="M:Legerity.Extensions.InteractionExtensions.ReleaseHold``1(Legerity.IElementWrapper{``0})">
+            <summary>
+            Releases the hold click from the element.
+            </summary>
+            <typeparam name="TElement">
+            The type of wrapped <see cref="T:OpenQA.Selenium.IWebElement"/>.
+            </typeparam>
+            <param name="element">The element to release the hold from.</param>
+        </member>
+        <member name="M:Legerity.Extensions.InteractionExtensions.ScrollTo(OpenQA.Selenium.Remote.RemoteWebElement)">
+            <summary>
+            Scrolls to the element.
+            </summary>
+            <param name="element">The element to scroll to.</param>
+        </member>
+        <member name="M:Legerity.Extensions.InteractionExtensions.ScrollTo``1(Legerity.IElementWrapper{``0})">
+            <summary>
+            Scrolls to the element.
+            </summary>
+            <typeparam name="TElement">
+            The type of wrapped <see cref="T:OpenQA.Selenium.IWebElement"/>.
+            </typeparam>
+            <param name="element">The element to scroll to.</param>
+        </member>
+        <member name="T:Legerity.Extensions.PageExtensions">
+            <summary>
+            Defines a collection of extensions for page objects.
+            </summary>
+        </member>
+        <member name="M:Legerity.Extensions.PageExtensions.TryWaitUntil``1(``0,System.Func{``0,System.Boolean},System.Nullable{System.TimeSpan},System.Int32,System.Action{System.Exception})">
+            <summary>
+            Attempts to wait until a specified page condition is met, with an optional timeout.
+            </summary>
+            <param name="page">The page to wait on.</param>
+            <param name="condition">The condition of the page to wait on.</param>
+            <param name="timeout">The optional timeout wait on the condition being true.</param>
+            <param name="retries">An optional count of retries after a timeout before accepting the failure.</param>
+            <param name="exceptionHandler">The optional exception handler thrown if an error occurs as a result of timeout.</param>
+            <typeparam name="TPage">The type of <see cref="T:Legerity.Pages.BasePage"/>.</typeparam>
+            <returns>Whether the wait was a success and the instance of the page.</returns>
+            <exception cref="T:System.Exception">Thrown when the <paramref name="exceptionHandler"/> callback throws an exception.</exception>
+        </member>
+        <member name="M:Legerity.Extensions.PageExtensions.WaitUntil``2(``0,System.Func{``0,``1},System.Nullable{System.TimeSpan},System.Int32)">
+            <summary>
+            Waits until a specified page condition is met, with an optional timeout.
+            </summary>
+            <param name="page">The page to wait on.</param>
+            <param name="condition">The condition of the page to wait on.</param>
+            <param name="timeout">The optional timeout wait on the condition being true.</param>
+            <param name="retries">An optional count of retries after a timeout before accepting the failure.</param>
+            <typeparam name="TPage">The type of <see cref="T:Legerity.Pages.BasePage"/>.</typeparam>
+            <typeparam name="TResult">The type of expected result from the wait condition.</typeparam>
+            <returns>The instance of the page.</returns>
+            <exception cref="T:OpenQA.Selenium.WebDriverException">Thrown when the condition is not met in the allocated timeout period.</exception>
+            <exception cref="T:System.Exception">Thrown when the <paramref name="condition"/> callback throws an exception.</exception>
+        </member>
+        <member name="T:Legerity.Extensions.StringExtensions">
+            <summary>
+            Defines a collection of extensions for <see cref="T:System.String"/>.
+            </summary>
+        </member>
+        <member name="M:Legerity.Extensions.StringExtensions.Contains(System.String,System.String,System.Globalization.CultureInfo,System.Globalization.CompareOptions)">
+            <summary>
+            Determines whether the specified value contains the comparison value by the specified culture and comparison option.
+            </summary>
+            <param name="value">
+            The value to check contains the <paramref name="contains"/> value.
+            </param>
+            <param name="contains">
+            The value that should be contained within the <paramref name="value"/>.
+            </param>
+            <param name="culture">
+            The culture for comparison.
+            </param>
+            <param name="compareOption">
+            The comparison option.
+            </param>
+            <returns>
+            True if the <paramref name="value"/> contains the <paramref name="contains"/> value; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Legerity.Extensions.StringExtensions.RemoveUnicodeCharacters(System.String)">
+            <summary>
+            Removes unicode characters from the specified string.
+            </summary>
+            <param name="value">The string to remove unicode characters from.</param>
+            <returns>The string with unicode characters removed.</returns>
+        </member>
+        <member name="T:Legerity.Helpers.AppiumServerHelper">
+            <summary>
+            Defines a helper class for launching a local Appium server.
+            </summary>
+        </member>
+        <member name="M:Legerity.Helpers.AppiumServerHelper.Run">
+            <summary>
+            Loads an instance of the Appium server process.
+            </summary>
+            <exception cref="T:Legerity.Exceptions.AppiumServerLoadFailedException">Thrown when the Appium server fails to load.</exception>
+        </member>
+        <member name="M:Legerity.Helpers.AppiumServerHelper.Stop">
+            <summary>
+            Stops the running instance of the WinAppDriver process.
+            </summary>
+        </member>
+        <member name="T:Legerity.Helpers.WaitUntilConditions">
+            <summary>
+            Defines a set of conditions that can be used with the WaitUntil methods of elements and pages.
+            </summary>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.TitleIs(System.String,System.StringComparison)">
+            <summary>
+            A condition for validating whether the title of the current Window matches the specified title.
+            </summary>
+            <param name="title">The expected title, which must be an exact match.</param>
+            <param name="comparison">The comparison for validating equality.</param>
+            <returns>True if the title matches; otherwise, false.</returns>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.TitleContains(System.String)">
+            <summary>
+            A condition for validating whether the title of the current Window contains a case-sensitive substring.
+            </summary>
+            <param name="title">The fragment of title expected.</param>
+            <returns>True if the title contains the text; otherwise, false.</returns>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.UrlIs(System.String,System.StringComparison)">
+            <summary>
+            A condition for validating whether the URL of the current Window matches the specified URL.
+            </summary>
+            <param name="url">The URL that the page should be on.</param>
+            <param name="comparison">The comparison for validating equality.</param>
+            <returns>True if the URL matches; otherwise, false.</returns>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.UrlContains(System.String)">
+            <summary>
+            A condition for validating whether the URL of the current Window contains a case-sensitive substring.
+            </summary>
+            <param name="url">The fragment of URL expected.</param>
+            <returns>True if the URL contains the text; otherwise, false.</returns>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.ElementExists(OpenQA.Selenium.By)">
+            <summary>
+            A condition for validating whether a specified element found by a locator exists within the context of the page.
+            <para>
+            Note, the element may exist but may not be visible.
+            </para>
+            </summary>
+            <param name="locator">The locator to find the element.</param>
+            <returns>True if the element exists; otherwise, false.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.ElementExistsInElement``1(OpenQA.Selenium.By)">
+            <summary>
+            A condition for validating whether a specified element found by a locator exists within the context of an element.
+            <para>
+            Note, the element may exist but may not be visible.
+            </para>
+            </summary>
+            <typeparam name="TElement">The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.</typeparam>
+            <param name="locator">The locator to find the element.</param>
+            <returns>True if the element exists; otherwise, false.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.ElementExistsInElementWrapper``1(OpenQA.Selenium.By)">
+            <summary>
+            A condition for validating whether a specified element found by a locator exists within the context of an element wrapper.
+            <para>
+            Note, the element may exist but may not be visible.
+            </para>
+            </summary>
+            <typeparam name="TElement">The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.</typeparam>
+            <param name="locator">The locator to find the element.</param>
+            <returns>True if the element exists; otherwise, false.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.ElementExistsInPage``1(OpenQA.Selenium.By)">
+            <summary>
+            A condition for validating whether a specified element found by a locator exists within the context of a page object.
+            <para>
+            Note, the element may exist but may not be visible.
+            </para>
+            </summary>
+            <typeparam name="TPage">The type of <see cref="T:Legerity.Pages.BasePage"/>.</typeparam>
+            <param name="locator">The locator to find the element.</param>
+            <returns>True if the element exists; otherwise, false.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.ElementIsVisible(OpenQA.Selenium.By)">
+            <summary>
+            A condition for validating whether a specified element found by a locator is visible within the context of the page.
+            </summary>
+            <param name="locator">The locator to find the element.</param>
+            <returns>True if the element is visible; otherwise, false.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.ElementIsVisibleInElement``1(OpenQA.Selenium.By)">
+            <summary>
+            A condition for validating whether a specified element found by a locator is visible within the context of an element.
+            </summary>
+            <typeparam name="TElement">The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.</typeparam>
+            <param name="locator">The locator to find the element.</param>
+            <returns>True if the element is visible; otherwise, false.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.ElementIsVisibleInElementWrapper``1(OpenQA.Selenium.By)">
+            <summary>
+            A condition for validating whether a specified element found by a locator is visible within the context of an element wrapper.
+            </summary>
+            <typeparam name="TElement">The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.</typeparam>
+            <param name="locator">The locator to find the element.</param>
+            <returns>True if the element is visible; otherwise, false.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.ElementIsVisibleInPage``1(OpenQA.Selenium.By)">
+            <summary>
+            A condition for validating whether a specified element found by a locator is visible within the context of a page object.
+            </summary>
+            <typeparam name="TPage">The type of <see cref="T:Legerity.Pages.BasePage"/>.</typeparam>
+            <param name="locator">The locator to find the element.</param>
+            <returns>True if the element is visible; otherwise, false.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.ElementIsNotVisible(OpenQA.Selenium.By)">
+            <summary>
+            A condition for validating whether a specified element found by a locator is hidden (not visible) within the context of the page.
+            </summary>
+            <param name="locator">The locator to find the element.</param>
+            <returns>True if the element is hidden (not visible); otherwise, false.</returns>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.ElementIsNotVisibleInElement``1(OpenQA.Selenium.By)">
+            <summary>
+            A condition for validating whether a specified element found by a locator is hidden (not visible) within the context of an element.
+            </summary>
+            <typeparam name="TElement">The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.</typeparam>
+            <param name="locator">The locator to find the element.</param>
+            <returns>True if the element is hidden (not visible); otherwise, false.</returns>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.ElementIsNotVisibleInElementWrapper``1(OpenQA.Selenium.By)">
+            <summary>
+            A condition for validating whether a specified element found by a locator is hidden (not visible) within the context of an element wrapper.
+            </summary>
+            <typeparam name="TElement">The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.</typeparam>
+            <param name="locator">The locator to find the element.</param>
+            <returns>True if the element is hidden (not visible); otherwise, false.</returns>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.ElementIsNotVisibleInPage``1(OpenQA.Selenium.By)">
+            <summary>
+            A condition for validating whether a specified element found by a locator is hidden (not visible) within the context of a page object.
+            </summary>
+            <typeparam name="TPage">The type of <see cref="T:Legerity.Pages.BasePage"/>.</typeparam>
+            <param name="locator">The locator to find the element.</param>
+            <returns>True if the element is hidden (not visible); otherwise, false.</returns>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.FrameAvailableToSwitchTo(System.String)">
+            <summary>
+            A condition for switching to a frame by its name when it is available.
+            </summary>
+            <param name="frameName">The name of the frame to switch to.</param>
+            <returns>The <see cref="T:OpenQA.Selenium.IWebDriver"/> for the frame that has been switched to.</returns>
+        </member>
+        <member name="M:Legerity.Helpers.WaitUntilConditions.FrameAvailableToSwitchTo(OpenQA.Selenium.By)">
+            <summary>
+            A condition for switching to a frame by its name when it is available.
+            </summary>
+            <param name="frameLocator">The locator of the frame to switch to.</param>
+            <returns>The <see cref="T:OpenQA.Selenium.IWebDriver"/> for the frame that has been switched to.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+            <exception cref="T:OpenQA.Selenium.StaleElementReferenceException">Thrown when an element is no longer valid.</exception>
+        </member>
+        <member name="T:Legerity.IElementWrapper`1">
+            <summary>
+            Defines an interface for a Selenium/Appium element wrapper.
+            </summary>
+            <typeparam name="TElement">
+            The type of <see cref="T:OpenQA.Selenium.IWebElement"/>.
+            </typeparam>
+        </member>
+        <member name="P:Legerity.IElementWrapper`1.Element">
+            <summary>Gets the original <typeparamref name="TElement"/> reference object.</summary>
+        </member>
+        <member name="P:Legerity.IElementWrapper`1.ElementDriver">
+            <summary>
+            Gets the driver used to find this element.
+            </summary>
+        </member>
+        <member name="P:Legerity.IElementWrapper`1.IsVisible">
+            <summary>
+            Gets a value indicating whether the element is visible.
+            </summary>
+        </member>
+        <member name="P:Legerity.IElementWrapper`1.IsEnabled">
+            <summary>
+            Gets a value indicating whether the element is enabled.
+            </summary>
+        </member>
+        <member name="M:Legerity.IElementWrapper`1.Click">
+            <summary>
+            Clicks the element.
+            </summary>
+        </member>
+        <member name="M:Legerity.IElementWrapper`1.GetAttribute(System.String)">
+            <summary>
+            Gets the value of the specified attribute for this element.
+            </summary>
+            <param name="attributeName">The name of the attribute.</param>
+            <returns>The attribute's current value if it exists; otherwise, null.</returns>
+        </member>
+        <member name="M:Legerity.IElementWrapper`1.VerifyElementShown(OpenQA.Selenium.By)">
+            <summary>
+            Determines whether the given element is shown.
+            </summary>
+            <param name="locator">
+            The locator for the element to find.
+            </param>
+        </member>
+        <member name="M:Legerity.IElementWrapper`1.VerifyElementShown(OpenQA.Selenium.By,System.Nullable{System.TimeSpan})">
+            <summary>
+            Determines whether the specified element is shown with the specified timeout.
+            </summary>
+            <param name="locator">The locator to find a specific element.</param>
+            <param name="timeout">
+            The amount of time the driver should wait when searching for the <paramref name="locator"/> if it is not immediately present.
+            </param>
+        </member>
+        <member name="M:Legerity.IElementWrapper`1.VerifyElementNotShown(OpenQA.Selenium.By)">
+            <summary>
+            Determines whether the given element is not shown.
+            </summary>
+            <param name="locator">
+            The locator for the element to locate.
+            </param>
+        </member>
+        <member name="M:Legerity.IElementWrapper`1.VerifyElementsShown(OpenQA.Selenium.By)">
+            <summary>
+            Determines whether the specified elements are shown.
+            </summary>
+            <param name="locator">
+            The locator for the element to find.
+            </param>
+        </member>
+        <member name="M:Legerity.IElementWrapper`1.VerifyElementsShown(OpenQA.Selenium.By,System.Nullable{System.TimeSpan})">
+            <summary>
+            Determines whether the specified elements are shown with the specified timeout.
+            </summary>
+            <param name="locator">
+            The locator to find a collection of elements.
+            </param>
+            <param name="timeout">
+            The amount of time the driver should wait when searching for the <paramref name="locator"/> if it is not immediately present.
+            </param>
+        </member>
+        <member name="T:Legerity.IOS.IOSAppManagerOptions">
+            <summary>
+            Defines a specific <see cref="T:Legerity.AppiumManagerOptions"/> for an iOS application.
+            </summary>
+        </member>
+        <member name="M:Legerity.IOS.IOSAppManagerOptions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.IOS.IOSAppManagerOptions"/> class.
+            </summary>
+        </member>
+        <member name="M:Legerity.IOS.IOSAppManagerOptions.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.IOS.IOSAppManagerOptions"/> class.
+            </summary>
+            <param name="appId">
+            The ID of the application under test, e.g. com.instagram.ios.
+            </param>
+            <param name="osVersion">
+            The version of iOS to run the application on.
+            </param>
+            <param name="deviceName">
+            The name of the iOS device to run the application on.
+            </param>
+            <param name="deviceId">
+            The ID of the Android device to run the application on.
+            </param>
+        </member>
+        <member name="M:Legerity.IOS.IOSAppManagerOptions.#ctor(System.String,System.String,System.String,System.String,System.ValueTuple{System.String,System.Object}[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.IOS.IOSAppManagerOptions"/> class.
+            </summary>
+            <param name="appId">
+            The ID of the application under test, e.g. com.instagram.ios.
+            </param>
+            <param name="osVersion">
+            The version of iOS to run the application on.
+            </param>
+            <param name="deviceName">
+            The name of the iOS device to run the application on.
+            </param>
+            <param name="deviceId">
+            The ID of the iOS device to run the application on.
+            </param>
+            <param name="additionalOptions">
+            The additional options to apply to the <see cref="T:OpenQA.Selenium.Appium.AppiumOptions"/>.
+            </param>
+        </member>
+        <member name="P:Legerity.IOS.IOSAppManagerOptions.AppId">
+            <summary>
+            Gets or sets the ID of the application under test.
+            </summary>
+        </member>
+        <member name="P:Legerity.IOS.IOSAppManagerOptions.OSVersion">
+            <summary>
+            Gets or sets the version of iOS to run the application on.
+            </summary>
+        </member>
+        <member name="P:Legerity.IOS.IOSAppManagerOptions.DeviceName">
+            <summary>
+            Gets or sets the name of the iOS device to run the application on.
+            </summary>
+        </member>
+        <member name="P:Legerity.IOS.IOSAppManagerOptions.DeviceId">
+            <summary>
+            Gets or sets the ID of the iOS device to run the application on.
+            </summary>
+        </member>
+        <member name="P:Legerity.IOS.IOSAppManagerOptions.AutomationName">
+            <summary>
+            Gets or sets the name of the automation tool to use to run the application. Defaults to <b>XCUITest</b>.
+            <para>
+            If a value is provided in the additional options, this value will override it.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Legerity.IOS.IOSAppManagerOptions.LaunchAppiumServer">
+            <summary>
+            Gets or sets a value indicating whether to launch the Appium server instance.
+            </summary>
+        </member>
+        <member name="M:Legerity.IOS.IOSAppManagerOptions.Configure">
+            <summary>
+            Configures the <see cref="P:Legerity.AppiumManagerOptions.AppiumOptions"/> with the specified additional options.
+            </summary>
+        </member>
+        <member name="M:Legerity.IOS.IOSAppManagerOptions.Configure(System.ValueTuple{System.String,System.Object}[])">
+            <summary>
+            Configures the <see cref="T:OpenQA.Selenium.Appium.AppiumOptions"/> with the specified additional options.
+            </summary>
+            <param name="additionalOptions">
+            The additional options to apply to the <see cref="T:OpenQA.Selenium.Appium.AppiumOptions"/>.
+            </param>
+        </member>
+        <member name="M:Legerity.IOS.IOSAppManagerOptions.ToString">
+            <summary>Returns a string that represents the current object.</summary>
+            <returns>A string that represents the current object.</returns>
+        </member>
+        <member name="T:Legerity.LegerityTestClass">
+            <summary>
+            Defines a base class for running tests with the Legerity framework.
+            </summary>
+        </member>
+        <member name="M:Legerity.LegerityTestClass.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.LegerityTestClass"/> class.
+            <para>
+            The <see cref="P:Legerity.LegerityTestClass.Options"/> will need to be set before calling <see cref="M:Legerity.LegerityTestClass.StartApp(System.Func{OpenQA.Selenium.IWebDriver,System.Boolean},System.Nullable{System.TimeSpan},System.Int32)"/>.
+            </para>
+            </summary>
+        </member>
+        <member name="M:Legerity.LegerityTestClass.#ctor(Legerity.AppManagerOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.LegerityTestClass"/> class with application launch option.
+            </summary>
+            <param name="options">The application launch options.</param>
+        </member>
+        <member name="P:Legerity.LegerityTestClass.App">
+            <summary>
+            Gets the instance of the started application.
+            <para>
+            This could be a <see cref="T:OpenQA.Selenium.Appium.Windows.WindowsDriver`1"/>, <see cref="T:OpenQA.Selenium.Appium.Android.AndroidDriver`1"/>, <see cref="T:OpenQA.Selenium.Appium.iOS.IOSDriver`1"/>, or web driver.
+            </para>
+            </summary>
+            <remarks>
+            This instance should not be used in parallelized test runs. Instead, use the instance returned by the <see cref="M:Legerity.LegerityTestClass.StartApp(System.Func{OpenQA.Selenium.IWebDriver,System.Boolean},System.Nullable{System.TimeSpan},System.Int32)"/> or <see cref="M:Legerity.LegerityTestClass.StartApp(Legerity.AppManagerOptions,System.Func{OpenQA.Selenium.IWebDriver,System.Boolean},System.Nullable{System.TimeSpan},System.Int32)"/> method.
+            </remarks>
+        </member>
+        <member name="P:Legerity.LegerityTestClass.Apps">
+            <summary>
+            Gets or sets the instances of started applications.
+            </summary>
+            <remarks>
+            This is useful for accessing drivers in parallelized tests.
+            </remarks>
+        </member>
+        <member name="P:Legerity.LegerityTestClass.Options">
+            <summary>
+            Gets or sets the model that represents the configuration options for the <see cref="T:Legerity.AppManager"/>.
+            </summary>
+        </member>
+        <member name="M:Legerity.LegerityTestClass.StartApp(System.Func{OpenQA.Selenium.IWebDriver,System.Boolean},System.Nullable{System.TimeSpan},System.Int32)">
+            <summary>
+            Starts the application ready for testing.
+            </summary>
+            <param name="waitUntil">
+            An optional condition of the driver to wait on until it is met.
+            </param>
+            <param name="waitUntilTimeout">
+            An optional timeout wait on the conditional wait until being true. If not set, the wait will run immediately, and if not valid, will throw an exception.
+            </param>
+            <param name="waitUntilRetries">
+            An optional count of retries after a timeout on the wait until condition before accepting the failure.
+            </param>
+            <returns>The configured and running application driver.</returns>
+            <exception cref="T:OpenQA.Selenium.WebDriverException">Thrown when the wait until condition is not met in the allocated timeout period if provided.</exception>
+            <exception cref="T:Legerity.Exceptions.DriverLoadFailedException">Thrown when the application is null, the session ID is null once initialized, or the driver fails to configure correctly before returning.</exception>
+            <exception cref="T:Legerity.LegerityException">Thrown when:
+            - The Appium server could not be found when running with <see cref="P:Legerity.Android.AndroidAppManagerOptions.LaunchAppiumServer"/> or <see cref="P:Legerity.IOS.IOSAppManagerOptions.LaunchAppiumServer"/> true.
+            - The WinAppDriver could not be found when running with <see cref="P:Legerity.Windows.WindowsAppManagerOptions.LaunchWinAppDriver"/> true.
+            - The WinAppDriver failed to load when running with <see cref="P:Legerity.Windows.WindowsAppManagerOptions.LaunchWinAppDriver"/> true.
+            </exception>
+        </member>
+        <member name="M:Legerity.LegerityTestClass.StartApp(Legerity.AppManagerOptions,System.Func{OpenQA.Selenium.IWebDriver,System.Boolean},System.Nullable{System.TimeSpan},System.Int32)">
+            <summary>
+            Starts the application ready for testing.
+            </summary>
+            <param name="options">
+            The optional options to configure the driver with.
+            <para>
+            Settings this will override the <see cref="P:Legerity.LegerityTestClass.Options"/> if previously set.
+            </para>
+            </param>
+            <param name="waitUntil">
+            An optional condition of the driver to wait on until it is met.
+            </param>
+            <param name="waitUntilTimeout">
+            An optional timeout wait on the conditional wait until being true. If not set, the wait will run immediately, and if not valid, will throw an exception.
+            </param>
+            <param name="waitUntilRetries">
+            An optional count of retries after a timeout on the wait until condition before accepting the failure.
+            </param>
+            <returns>The configured and running application driver.</returns>
+            <exception cref="T:Legerity.Exceptions.DriverLoadFailedException">Thrown when the application is null, the session ID is null once initialized, or the driver fails to configure correctly before returning.</exception>
+            <exception cref="T:Legerity.LegerityException">Thrown when:
+            - The Appium server could not be found when running with <see cref="P:Legerity.Android.AndroidAppManagerOptions.LaunchAppiumServer"/> or <see cref="P:Legerity.IOS.IOSAppManagerOptions.LaunchAppiumServer"/> true.
+            - The WinAppDriver could not be found when running with <see cref="P:Legerity.Windows.WindowsAppManagerOptions.LaunchWinAppDriver"/> true.
+            - The WinAppDriver failed to load when running with <see cref="P:Legerity.Windows.WindowsAppManagerOptions.LaunchWinAppDriver"/> true.
+            </exception>
+            <exception cref="T:OpenQA.Selenium.WebDriverException">Thrown when the wait until condition is not met in the allocated timeout period if provided.</exception>
+        </member>
+        <member name="M:Legerity.LegerityTestClass.StopApp">
+            <summary>
+            Stops the <see cref="P:Legerity.LegerityTestClass.App"/> and any running Appium or WinAppDriver server.
+            </summary>
+        </member>
+        <member name="M:Legerity.LegerityTestClass.StopApp(System.Boolean)">
+            <summary>
+            Stops the <see cref="P:Legerity.LegerityTestClass.App"/>, with an option to stop the running Appium or WinAppDriver server.
+            </summary>
+            <param name="stopServer">
+            An optional value indicating whether to stop the running Appium or WinAppDriver server.
+            </param>
+        </member>
+        <member name="M:Legerity.LegerityTestClass.StopApp(OpenQA.Selenium.Remote.RemoteWebDriver,System.Boolean)">
+            <summary>
+            Stops an application, with an option to stop the running Appium or WinAppDriver server.
+            </summary>
+            <param name="app">
+            The <see cref="T:OpenQA.Selenium.IWebDriver"/> instance to stop running.
+            </param>
+            <param name="stopServer">
+            An optional value indicating whether to stop the running Appium or WinAppDriver server. Default, <b>false</b>.
+            </param>
+        </member>
+        <member name="M:Legerity.LegerityTestClass.StopApps(System.Boolean)">
+            <summary>
+            Stops all running application drivers, with an option to stop the running Appium or WinAppDriver server.
+            </summary>
+            <param name="stopServer">
+            An optional value indicating whether to stop the running Appium or WinAppDriver server. Default, <b>true</b>.
+            </param>
+        </member>
+        <member name="T:Legerity.Pages.BasePage">
+            <summary>
+            Defines a base page for creating tests following the page object pattern.
+            </summary>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Pages.BasePage"/> class using the <see cref="P:Legerity.AppManager.App"/> instance that verifies the page has loaded within 2 seconds.
+            </summary>
+            <exception cref="T:Legerity.Exceptions.DriverNotInitializedException">Thrown when AppManager.StartApp() has not been called.</exception>
+            <exception cref="T:Legerity.Exceptions.PageNotShownException">Thrown when the page is not shown in 2 seconds.</exception>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.#ctor(OpenQA.Selenium.Remote.RemoteWebDriver)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Pages.BasePage"/> class using a <see cref="T:OpenQA.Selenium.Remote.RemoteWebDriver"/> instance that verifies the page has loaded within 2 seconds.
+            </summary>
+            <param name="app">
+            The instance of the started application driver that will be used to drive the page interaction.
+            </param>
+            <exception cref="T:Legerity.Exceptions.DriverNotInitializedException">Thrown when AppManager.StartApp() has not been called.</exception>
+            <exception cref="T:Legerity.Exceptions.PageNotShownException">Thrown when the page is not shown in 2 seconds.</exception>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.#ctor(System.Nullable{System.TimeSpan})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Pages.BasePage"/> class using the <see cref="P:Legerity.AppManager.App"/> instance that verifies the page has loaded within the given timeout.
+            </summary>
+            <param name="traitTimeout">
+            The amount of time the driver should wait when searching for the <see cref="P:Legerity.Pages.BasePage.Trait"/> if it is not immediately present.
+            </param>
+            <exception cref="T:Legerity.Exceptions.DriverNotInitializedException">Thrown when AppManager.StartApp() has not been called.</exception>
+            <exception cref="T:Legerity.Exceptions.PageNotShownException">Thrown when the page is not shown in the given timeout.</exception>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.#ctor(OpenQA.Selenium.Remote.RemoteWebDriver,System.Nullable{System.TimeSpan})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Pages.BasePage"/> class using a <see cref="T:OpenQA.Selenium.Remote.RemoteWebDriver"/> instance that verifies the page has loaded within the given timeout.
+            </summary>
+            <param name="app">
+            The instance of the started application driver that will be used to drive the page interaction.
+            </param>
+            <param name="traitTimeout">
+            The amount of time the driver should wait when searching for the <see cref="P:Legerity.Pages.BasePage.Trait"/> if it is not immediately present.
+            </param>
+            <exception cref="T:Legerity.Exceptions.DriverNotInitializedException">Thrown when AppManager.StartApp() has not been called.</exception>
+            <exception cref="T:Legerity.Exceptions.PageNotShownException">Thrown when the page is not shown in the given timeout.</exception>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="P:Legerity.Pages.BasePage.App">
+            <summary>
+            Gets the instance of the started application.
+            <para>
+            The <see cref="P:Legerity.Pages.BasePage.App"/> instance serves as base for the drivers and can be referenced for basic Selenium functions.
+            </para>
+            <para>
+            This could be a <see cref="T:OpenQA.Selenium.Appium.Windows.WindowsDriver`1"/>, <see cref="T:OpenQA.Selenium.Appium.Android.AndroidDriver`1"/>, <see cref="T:OpenQA.Selenium.Appium.iOS.IOSDriver`1"/>, or web driver.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Legerity.Pages.BasePage.WaitTimeout">
+            <summary>
+            Gets or sets the amount of time the driver should wait when searching for elements if they are not immediately present.
+            </summary>
+        </member>
+        <member name="P:Legerity.Pages.BasePage.WindowsApp">
+            <summary>
+            Gets the instance of the started Windows application.
+            </summary>
+        </member>
+        <member name="P:Legerity.Pages.BasePage.AndroidApp">
+            <summary>
+            Gets the instance of the started Android application.
+            </summary>
+        </member>
+        <member name="P:Legerity.Pages.BasePage.IOSApp">
+            <summary>
+            Gets the instance of the started iOS application.
+            </summary>
+        </member>
+        <member name="P:Legerity.Pages.BasePage.WebApp">
+            <summary>
+            Gets the instance of the started web application.
+            </summary>
+        </member>
+        <member name="P:Legerity.Pages.BasePage.Trait">
+            <summary>
+            Gets a given trait of the page to verify that the page is in view.
+            </summary>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.FindElement(OpenQA.Selenium.By)">
+            <summary>
+            Finds the first element in the page that matches the <see cref="T:OpenQA.Selenium.By" /> locator.
+            </summary>
+            <param name="locator">The locator to find the element.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement"/>.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.FindElements(OpenQA.Selenium.By)">
+            <summary>
+            Finds all the elements in the page that matches the <see cref="T:OpenQA.Selenium.By" /> locator.
+            </summary>
+            <param name="locator">The locator to find the elements.</param>
+            <returns>A readonly collection of <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement"/>.</returns>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.FindElementByXPath(System.String)">
+            <summary>
+            Finds the first element in the page that matches the specified XPath.
+            </summary>
+            <param name="xpath">The XPath to find the element.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement"/>.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.FindElementsByXPath(System.String)">
+            <summary>
+            Finds all the elements in the page that matches the specified XPath.
+            </summary>
+            <param name="xpath">The XPath to find the elements.</param>
+            <returns>A readonly collection of <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement"/>.</returns>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.FindElementById(System.String)">
+            <summary>
+            Finds the first element in the page that matches the specified ID.
+            </summary>
+            <param name="id">The ID of the element.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement"/>.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.FindElementByName(System.String)">
+            <summary>
+            Finds the first of element in the page that matches the specified name.
+            </summary>
+            <param name="name">The name of the element.</param>
+            <returns>A <see cref="T:OpenQA.Selenium.Remote.RemoteWebElement"/>.</returns>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.VerifyPageShown">
+            <summary>
+            Determines whether the current page is shown immediately.
+            </summary>
+            <exception cref="T:Legerity.Exceptions.DriverNotInitializedException">Thrown when AppManager.StartApp() has not been called.</exception>
+            <exception cref="T:Legerity.Exceptions.PageNotShownException">Thrown when the page is not shown.</exception>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.VerifyPageShown(System.Nullable{System.TimeSpan})">
+            <summary>
+            Determines whether the current page is shown with the specified timeout.
+            </summary>
+            <param name="timeout">
+            The amount of time the driver should wait when searching for the <see cref="P:Legerity.Pages.BasePage.Trait"/> if it is not immediately present.
+            </param>
+            <exception cref="T:Legerity.Exceptions.DriverNotInitializedException">Thrown when AppManager.StartApp() has not been called.</exception>
+            <exception cref="T:Legerity.Exceptions.PageNotShownException">Thrown when the page is not shown.</exception>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.VerifyElementShown(OpenQA.Selenium.By)">
+            <summary>
+            Determines whether the given element is shown.
+            </summary>
+            <param name="locator">
+            The locator for the element to find.
+            </param>
+            <exception cref="T:Legerity.Exceptions.DriverNotInitializedException">Thrown when AppManager.StartApp() has not been called.</exception>
+            <exception cref="T:Legerity.Exceptions.ElementNotShownException">Thrown when the element is not shown.</exception>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.VerifyElementShown(OpenQA.Selenium.By,System.Nullable{System.TimeSpan})">
+            <summary>
+            Determines whether the given element is shown with the specified timeout.
+            </summary>
+            <param name="locator">
+            The locator for the element to find.
+            </param>
+            <param name="timeout">
+            The amount of time the driver should wait when searching for the <paramref name="locator"/> element if it is not immediately present.
+            </param>
+            <exception cref="T:Legerity.Exceptions.DriverNotInitializedException">Thrown when AppManager.StartApp() has not been called.</exception>
+            <exception cref="T:Legerity.Exceptions.ElementNotShownException">Thrown when the element is not shown.</exception>
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.VerifyElementNotShown(OpenQA.Selenium.By)">
+            <summary>
+            Determines whether the given element is not shown.
+            </summary>
+            <param name="locator">
+            The locator for the element to locate.
+            </param>
+            <exception cref="T:Legerity.Exceptions.DriverNotInitializedException">Thrown when AppManager.StartApp() has not been called.</exception>
+        </member>
+        <member name="M:Legerity.Pages.BasePage.AttemptWaitForDriverElement(OpenQA.Selenium.By,System.TimeSpan,OpenQA.Selenium.IWebDriver)">
+            <exception cref="T:OpenQA.Selenium.NoSuchElementException">Thrown when no element matches the expected locator.</exception>
+        </member>
+        <member name="T:Legerity.Web.WebAppDriverType">
+            <summary>
+            Defines the values associated with the web app driver type.
+            </summary>
+        </member>
+        <member name="F:Legerity.Web.WebAppDriverType.None">
+            <summary>
+            None. Setting this will cause the application driver to not start.
+            </summary>
+        </member>
+        <member name="F:Legerity.Web.WebAppDriverType.Chrome">
+            <summary>
+            Chrome. Setting this will cause the application driver to launch for Google Chrome.
+            </summary>
+        </member>
+        <member name="F:Legerity.Web.WebAppDriverType.Firefox">
+            <summary>
+            Firefox. Setting this will cause the application driver to launch for Mozilla Firefox.
+            </summary>
+        </member>
+        <member name="F:Legerity.Web.WebAppDriverType.Opera">
+            <summary>
+            Opera. Setting this will cause the application driver to launch for Opera.
+            </summary>
+        </member>
+        <member name="F:Legerity.Web.WebAppDriverType.Safari">
+            <summary>
+            Safari. Setting this will cause the application driver to launch for Apple's Safari.
+            </summary>
+        </member>
+        <member name="F:Legerity.Web.WebAppDriverType.Edge">
+            <summary>
+            Edge. Setting this will cause the application driver to launch for Microsoft's Legacy Edge.
+            </summary>
+        </member>
+        <member name="F:Legerity.Web.WebAppDriverType.InternetExplorer">
+            <summary>
+            Internet Explorer. This will cause the application driver to launch for Microsoft's Internet Explorer.
+            </summary>
+        </member>
+        <member name="F:Legerity.Web.WebAppDriverType.EdgeChromium">
+            <summary>
+            Edge Chromium. Setting this will cause the application driver to launch for Microsoft's Chromium Edge.
+            </summary>
+        </member>
+        <member name="T:Legerity.Web.WebAppManagerOptions">
+            <summary>
+            Defines a specific <see cref="T:Legerity.AppManagerOptions"/> for a Web application.
+            </summary>
+        </member>
+        <member name="M:Legerity.Web.WebAppManagerOptions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Web.WebAppManagerOptions"/> class.
+            </summary>
+        </member>
+        <member name="M:Legerity.Web.WebAppManagerOptions.#ctor(Legerity.Web.WebAppDriverType,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Web.WebAppManagerOptions"/> class.
+            </summary>
+            <param name="driverType">The type of web application driver to start.</param>
+            <param name="driverDirectoryPath">The path to the web application driver directory.</param>
+        </member>
+        <member name="P:Legerity.Web.WebAppManagerOptions.DriverType">
+            <summary>
+            Gets or sets the type of web application driver to start.
+            </summary>
+        </member>
+        <member name="P:Legerity.Web.WebAppManagerOptions.Url">
+            <summary>
+            Gets or sets the URL of the web application to load.
+            </summary>
+        </member>
+        <member name="P:Legerity.Web.WebAppManagerOptions.DesiredSize">
+            <summary>
+            Gets or sets the desired size of the window for the web application.
+            <para>
+            The default value is 1280x800.
+            </para>
+            <para>
+            If <see cref="P:Legerity.Web.WebAppManagerOptions.Maximize"/> is set to true, this value is ignored.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Legerity.Web.WebAppManagerOptions.Maximize">
+            <summary>
+            Gets or sets a value indicating whether to maximize the window for the web application.
+            </summary>
+        </member>
+        <member name="M:Legerity.Web.WebAppManagerOptions.ToString">
+            <summary>Returns a string that represents the current object.</summary>
+            <returns>A string that represents the current object.</returns>
+        </member>
+        <member name="T:Legerity.Windows.Exceptions.WinAppDriverLoadFailedException">
+            <summary>
+            Defines an exception for when the WinAppDriver could not be loaded.
+            </summary>
+        </member>
+        <member name="M:Legerity.Windows.Exceptions.WinAppDriverLoadFailedException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Windows.Exceptions.WinAppDriverLoadFailedException"/> class.
+            </summary>
+            <param name="path">The expected path for the WinAppDriver.</param>
+            <param name="exception">The inner exception thrown by the failure to load the WinAppDriver.</param>
+        </member>
+        <member name="P:Legerity.Windows.Exceptions.WinAppDriverLoadFailedException.Path">
+            <summary>
+            Gets or sets the path where the WinAppDriver should have loaded from.
+            </summary>
+        </member>
+        <member name="T:Legerity.Windows.Exceptions.WinAppDriverNotFoundException">
+            <summary>
+            Defines an exception for when the WinAppDriver cannot be found.
+            </summary>
+        </member>
+        <member name="M:Legerity.Windows.Exceptions.WinAppDriverNotFoundException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Windows.Exceptions.WinAppDriverNotFoundException"/> class.
+            </summary>
+            <param name="path">The expected path for the WinAppDriver.</param>
+        </member>
+        <member name="P:Legerity.Windows.Exceptions.WinAppDriverNotFoundException.Path">
+            <summary>
+            Gets or sets the path where the WinAppDriver should be located.
+            </summary>
+        </member>
+        <member name="T:Legerity.Windows.Helpers.WinAppDriverHelper">
+            <summary>
+            Defines a helper class for the WinAppDriver.
+            </summary>
+        </member>
+        <member name="F:Legerity.Windows.Helpers.WinAppDriverHelper.DefaultInstallLocation">
+            <summary>
+            Defines the default install location for the WinAppDriver.
+            </summary>
+        </member>
+        <member name="M:Legerity.Windows.Helpers.WinAppDriverHelper.IsInstalled(System.String)">
+            <summary>
+            Determines whether the WinAppDriver is installed.
+            </summary>
+            <param name="path">The expected path for the WinAppDriver.</param>
+            <returns>True if the WinAppDriver exists at the specified <paramref name="path"/>; otherwise, false.</returns>
+        </member>
+        <member name="M:Legerity.Windows.Helpers.WinAppDriverHelper.Run(System.String)">
+            <summary>
+            Loads an instance of the WinAppDriver process.
+            </summary>
+            <param name="path">The expected path for the WinAppDriver.</param>
+            <exception cref="T:Legerity.Windows.Exceptions.WinAppDriverNotFoundException">Thrown when the WinAppDriver could not be found.</exception>
+            <exception cref="T:Legerity.Windows.Exceptions.WinAppDriverLoadFailedException">Thrown when the WinAppDriver fails to load.</exception>
+        </member>
+        <member name="M:Legerity.Windows.Helpers.WinAppDriverHelper.Stop">
+            <summary>
+            Stops the running instance of the WinAppDriver process.
+            </summary>
+        </member>
+        <member name="T:Legerity.Windows.WindowsAppManagerOptions">
+            <summary>
+            Defines a specific <see cref="T:Legerity.AppiumManagerOptions"/> for a Windows application.
+            </summary>
+        </member>
+        <member name="M:Legerity.Windows.WindowsAppManagerOptions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Windows.WindowsAppManagerOptions"/> class.
+            </summary>
+        </member>
+        <member name="M:Legerity.Windows.WindowsAppManagerOptions.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Windows.WindowsAppManagerOptions"/> class.
+            </summary>
+            <param name="appId">
+            The ID of the application under test.
+            </param>
+        </member>
+        <member name="M:Legerity.Windows.WindowsAppManagerOptions.#ctor(System.String,System.ValueTuple{System.String,System.Object}[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Legerity.Windows.WindowsAppManagerOptions"/> class.
+            </summary>
+            <param name="appId">
+            The ID of the application under test.
+            </param>
+            <param name="additionalOptions">
+            The additional options to apply to the <see cref="T:OpenQA.Selenium.Appium.AppiumOptions"/>.
+            </param>
+        </member>
+        <member name="P:Legerity.Windows.WindowsAppManagerOptions.AppId">
+            <summary>
+            Gets or sets the ID of the application under test.
+            </summary>
+        </member>
+        <member name="P:Legerity.Windows.WindowsAppManagerOptions.LaunchWinAppDriver">
+            <summary>
+            Gets or sets a value indicating whether to launch the WinAppDriver if it is not already running.
+            </summary>
+        </member>
+        <member name="P:Legerity.Windows.WindowsAppManagerOptions.Maximize">
+            <summary>
+            Gets or sets a value indicating whether to maximize the window for the application.
+            </summary>
+        </member>
+        <member name="P:Legerity.Windows.WindowsAppManagerOptions.WinAppDriverPath">
+            <summary>
+            Gets or sets the path to the WinAppDriver installation for launch.
+            <para>
+            By default, the path will be the default install location; C:\Program Files (x86)\Windows Application Driver\WinAppDriver.exe.
+            </para>
+            </summary>
+        </member>
+        <member name="M:Legerity.Windows.WindowsAppManagerOptions.Configure">
+            <summary>
+            Configures the <see cref="P:Legerity.AppiumManagerOptions.AppiumOptions"/> with the specified additional options.
+            </summary>
+        </member>
+        <member name="M:Legerity.Windows.WindowsAppManagerOptions.Configure(System.ValueTuple{System.String,System.Object}[])">
+            <summary>
+            Configures the <see cref="T:OpenQA.Selenium.Appium.AppiumOptions"/> with the specified additional options.
+            </summary>
+            <param name="additionalOptions">
+            The additional options to apply to the <see cref="T:OpenQA.Selenium.Appium.AppiumOptions"/>.
+            </param>
+        </member>
+        <member name="M:Legerity.Windows.WindowsAppManagerOptions.ToString">
+            <summary>Returns a string that represents the current object.</summary>
+            <returns>A string that represents the current object.</returns>
+        </member>
+    </members>
+</doc>
